@@ -21,9 +21,6 @@ module.exports.openClient = function (id) {
 	redis_client.on('ready',function(res){
 		console.log('ready connect redis...');    
 	});
-	//var redis_client  = redis.createClient('6379', '123.57.6.81');
-	//redis 验证 (reids.conf未开启验证，此项可不需要)
-	//redis_client.auth("x823888251");
 	
 	redis_client.select(id);
 	return redis_client;
