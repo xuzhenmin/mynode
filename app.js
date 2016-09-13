@@ -15,7 +15,7 @@ module.exports.openClient = function (id) {
 	var redis = require('redis'),
 	RDS_PORT = 6379,        //端口号
 	RDS_HOST = '123.57.6.81',    //服务器IP
-	RDS_PWD = 'x823888251',
+	RDS_PWD = '',
 	RDS_OPTS = {auth_pass:RDS_PWD},            //设置项
 	redis_client = redis.createClient(RDS_PORT,RDS_HOST,RDS_OPTS);
 	redis_client.on('ready',function(res){
