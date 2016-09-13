@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>welcome</title>
+	<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 1200px)" href="css/chat_mobile.css">
+	<link rel="stylesheet" type="text/css" href="css/chat.css" media="screen">
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/viewchat.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="header">
+            <span style="float: left;">welcome</span>
+            <span style="float: right;" id="head_time"></span>
+        </div>
+        <ul class="content" id="content"'>
+		</ul>
+        <div class="footer">
+            <div id="user_face_icon">
+                <img id="myimg" src="http://img1.osfeng.cn/head/31.jpg" alt="">
+            </div>
+            <input id="text" type="text" placeholder="说点什么吧...">
+            <span id="btn">发送</span>
+        </div>
+    </div>
+    <input id="uuid" type="hidden">
+</body>
+</html>
